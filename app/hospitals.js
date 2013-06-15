@@ -7,18 +7,18 @@
  *
  * @apiDescription Returns all hospitals.
  *
- * @apiSuccess {Integer}      id                  Hospital ID
+ * @apiSuccess {String}       id                  Hospital ID
  * @apiSuccess {String}       name                Hospital name
  *
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
  *     { "hospitals": [{
- *         "id": 1,
+ *         "id": "1",
  *         "name": "AKH Wien"
  *       },
  *       {
- *         "id": 2,
- *         "name": "Donauspital Krems"
+ *         "id": "2",
+ *         "name": "Barmherzige Brüder"
  *       }]
  *     }
  */
@@ -32,18 +32,16 @@
  *
  * @apiDescription Returns data for a specific hosptial.
  *
- * @apiParam    {Integer}     id                  Hospital ID
+ * @apiParam    {String}      id                  Hospital ID
  *
- * @apiSuccess  {Integer}     id                  Hospital ID
+ * @apiSuccess  {String}      id                  Hospital ID
  * @apiSuccess  {String}      name                Hospital name
- * @apiSuccess  {Array}       time_slot_ids       Array of TimeSlots in the future, associated with this hospital
  *
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
  *     { "hospital": {
- *         "id": 1,
- *         "name": "AKH Wien",
- *         "time_slot_ids": [1, 2, 3]
+ *         "id": "1",
+ *         "name": "AKH Wien"
  *       }
  *     }
  *
